@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Mon Dec  1 18:18:25 2025 as: /usr/lib/nmap/nmap --privileged --script vuln -oN vuln-127.0.0.1.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0000020s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-enum: 
+|_  /server-status/: Potentially interesting folder
+
+# Nmap done at Mon Dec  1 18:18:58 2025 -- 1 IP address (1 host up) scanned in 32.14 seconds
